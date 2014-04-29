@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+            <script src='js/chart.min.js'></script>
+            <script src='bower_components/countUp.js/countUp.min.js'></script>
+
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+            <script src='js/chart-data.js'></script>
+
+
+</head>
+<body>
+
+
+<div class="row">
+
+
+    <div class="sales-trend module">
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="columns large-10 large-offset-1">
+                    <h2 class="repl">YTD Sales Trend</h2>
+
+                </div>
+            </div>
+
+            <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
+
+        </div>
+    </div>
+    <div class="sales-data module">
+        <div class="large-6 columns">
+            <h2 class="repl">Rolling Scoreboard</h2>
+            <div class="scoreboard-tab">
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>to annual plan</h5>
+                            <span id="sc-1" class="score"></span>
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>YTD Net</h5>
+                            <span id="sc-2" class="score"></span>
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>YTD plan</h5>
+                            <span id="sc-3" class="score"></span>
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="large-6 columns">
+                <h2 class="repl">Margins</h2>
+             <div class="scoreboard-tab">
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>ytd net to plan</h5>
+                            <span id="sc-4" class="score"></span>%
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>average margin (ytd net / ytd gross)</h5>
+                            <span id="sc-5" class="score"></span>%
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+                <div class="panel score-card">
+                    <div class="row">
+                        <div class="columns large-10">
+                            <h5>yoy growth (ytd net vs. f14 actual)</h5>
+                            <span id="sc-6" class="score"></span>%
+                        </div>
+                        <div class="columns large-2">
+                            icon
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sales-trend-2 large-12 columns">
+
+        <div class="row">
+            <div class="large-6 columns module">
+                <h2>90 day</h2>
+
+            </div>
+             <div class="large-6 columns module">
+                <h2>Net revenue</h2>
+        <canvas id="netRevenue" width="400" height="300"></canvas>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+</div>
+
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

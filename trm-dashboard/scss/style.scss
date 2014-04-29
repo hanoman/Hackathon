@@ -1,0 +1,78 @@
+/*
+Theme Name: Buana
+Theme URL: http://themeforest.net/user/population2/
+Author: Population2
+*/
+
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+
+// import normalize, stay at top
+@import "normalize";
+// Global Foundation Settings
+@import "settings";
+// Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
+@import "foundation/components/pagination";
+// Reverie comes with a standalone Foundation stylesheet already
+// @import "foundation";
+// Load some Compass magic, note you will need to install Compass first
+//@import "compass/css3/shared";
+//@import "compass/css3/border-radius";
+//@import "compass/css3/transition";
+//@import "compass/css3/box-shadow";
+@import "compass/css3";
+@import "compass/utilities";
+//@import "compass";
+// @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700);
+
+
+.repl { font-family: 'Roboto', 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.module { overflow: hidden;
+    background: white; }
+.sales-trend {
+    h2 { text-transform: uppercase;
+            font-size: rem-calc(24px);
+            font-weight: 700;
+
+    }
+
+    margin-top: rem-calc(30px);
+
+}
+.sales-data {
+        margin-top: rem-calc(30px);
+        h2 {
+            text-transform: uppercase;
+            font-size: rem-calc(18px);
+            font-weight: 700;
+        }
+
+}
+.sales-trend-2 {
+
+    margin-top: rem-calc(30px);
+
+}
+
+
+.score-card {
+    h5 {
+        color: #0089cf;
+                    font-weight: 700;
+
+                    text-transform: uppercase;
+                    font-size: 14px;
+
+    }
+    .score { font-size: 30px;
+
+        font-weight: 700;
+
+    }
+}
